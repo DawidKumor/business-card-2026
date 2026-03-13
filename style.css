@@ -1,50 +1,73 @@
 body {
     background: #120922;
     min-height: 100vh;
+    /* minimalna wysokosc do srodkowania*/
     display: flex;
     justify-content: center;
+    /* srodkowanie elementow w poziomie */
     align-items: center;
+    /* srodkowanie elementow w pionie */
     padding: 16px;
+    /* klasyczny odstep od krawedzi */
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .card {
     background: #F8F8F8;
     border-radius: 16px;
     padding: 32px;
     flex-basis: 616px;
+    /* szerokosc karty, ale moze sie rozciagac */
 }
+
 .card__content {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* wyrównanie do góry przeciwny kierunek */
+    justify-content: center; /* srodkowanie elementów w poziomie */
+    flex-wrap: wrap; /* zawijanie elementów w przypadku braku miejsca */
     gap: 24px;
 }
+
 .card__description {
     line-height: 1.375;
+    /* odstep miedzy wierszami 22 / 16*/
     margin: 0;
-    
+
 }
+
 .card__info {
-    flex-basis: 380px;
-    flex-grow: 1;
+    flex-basis: 380px; /* szerokosc info, ale moze sie rozciagac */
+    flex-grow: 1; /* pozwala na rozciaganie info, gdy jest wiecej miejsca */
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    flex-direction: column; /* ułożenie elementów w kolumnie */
+    gap: 24px; /* odstep miedzy elementami */
 }
+
 .card__name {
     font-size: 36px;
     font-weight: 400;
+    /* normalna grubość czcionki */
     margin: 0;
+    /* usunięcie domyślnego marginesu */
     color: #120922;
+
 }
+
 .card__position {
     font-style: italic;
+    /* kursywa */
     font-size: 18px;
-    margin:0;
+    margin: 0;
     color: #545454;
 }
+
 .card__link {
     color: #E20613;
     text-decoration: none;
+    /* usunięcie podkreślenia */
+}
+
+.orange {
+    color: #ED6D05;
 }
